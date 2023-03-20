@@ -11,6 +11,18 @@ val JacksonVersion = "2.11.4"
 val AkkaStreamAlpakka = "4.0.0"
 val AkkaStreamKafka = "3.0.1"
 
+// 这个钱包在 akka-topics 存储库中实现。如果你已经克隆了 akka-topics 项目，你会在它的根目录中找到一个 build.sbt 文件。
+// Sbt 使用这个文件来编译、运行和测试项目。
+// 该项目有几个子项目，每章一个，因此您可以运行它们、测试它们，并在阅读本书的同时玩耍。每个子项目包括以下内容：
+
+// 名称 - 由 val 定义。
+// 文件位置 - 子项目的文件夹相对于 build.sbt 文件的名称。
+// Scala 版本 - Scala 版本。设置完成后，Scala 将自动从 Sbt 下载。
+// 库依赖项 - 子项目中使用的库。它们也会自动从 Sbt 下载。
+
+// 要运行钱包应用程序，您需要打开命令行并启动 Sbt shell。为此，请转到 akka-topics 的根目录，然后运行以下命令
+
+// 本章中的所有示例都在文件 build.sbt 中定义的第 2 章中实现，如以下代码段所示。
 lazy val chapter02 = project
   .in(file("chapter02"))
   .settings(
